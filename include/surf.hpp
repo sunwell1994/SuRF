@@ -57,8 +57,8 @@ public:
     }
 
     ~SuRF() {
-	//delete louds_dense_;
-	//delete louds_sparse_;
+	delete louds_dense_;
+	delete louds_sparse_;
     }
 
     void create(const std::vector<std::string>& keys,

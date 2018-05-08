@@ -67,10 +67,10 @@ public:
     LoudsSparse(const SuRFBuilder* builder);
 
     ~LoudsSparse() {
-	//delete labels_;
-	//delete child_indicator_bits_;
-	//delete louds_bits_;
-	//delete suffixes_;
+	delete labels_;
+	delete child_indicator_bits_;
+	delete louds_bits_;
+	delete suffixes_;
     }
 
     // point query: trie walk starts at node "in_node_num" instead of root
